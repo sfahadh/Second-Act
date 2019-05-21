@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Questions.css'
-import { Redirect } from "react-router-dom"
+// import { Redirect } from "react-router-dom"
 
 export default class Question1 extends Component {
     constructor(props) {
@@ -29,7 +29,7 @@ export default class Question1 extends Component {
 
     render() {
         const { nextQuestion, revealSubmit } = this.state
-        if(nextQuestion) return <Redirect to="/question-2"/>
+        // if(nextQuestion) return <Redirect to="/quiz/question-2"/>
 
         return (
         <div className="questions-page">
