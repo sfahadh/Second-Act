@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Questions.css'
-// import { Redirect } from "react-router-dom"
+import { Redirect } from "react-router-dom"
 
 export default class Question1 extends Component {
     constructor(props) {
@@ -29,27 +29,23 @@ export default class Question1 extends Component {
 
     render() {
         const { nextQuestion, revealSubmit } = this.state
-        // if(nextQuestion) return <Redirect to="/quiz/question-2"/>
+        // if(nextQuestion) return <Redirect to="/quiz/question-3"/>
 
         return (
         <div className="questions-page">
             <form className="question-form">
-                <h3 className="question-header">What is your area of interest?</h3>
+                <h3 className="question-header">How much are you willing to spend on school?</h3>
                 <h4>(you can select multiple choices)</h4>
                 <div className="answer-choice first" onClick={this.handleRevealSubmit}>
-                    <h3>Business</h3>
+                    <h3>$10,000+</h3>
                 </div>
 
                 <div className="answer-choice second" onClick={this.handleRevealSubmit}>
-                    <h3>Design</h3>
-                </div>
-
-                <div className="answer-choice third" onClick={this.handleRevealSubmit}>
-                    <h3>Technology</h3>
+                    <h3>$1000 - $10,000</h3>
                 </div>
 
                 <div className="answer-choice" onClick={this.handleRevealSubmit}>
-                    <h3>Vocational Training</h3>
+                    <h3>$0 - $999</h3>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null
