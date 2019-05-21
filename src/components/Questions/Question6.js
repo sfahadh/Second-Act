@@ -29,15 +29,19 @@ export default class Question1 extends Component {
 
     render() {
         const { nextQuestion, revealSubmit } = this.state
-        if(nextQuestion) return <Redirect to="/question-6"/>
+        // if(nextQuestion) return <Redirect to="/question-7"/>
 
         return (
         <div className="questions-page">
             <form className="question-form">
-                <h3 className="question-header">Where are you located?</h3>
+                <h3 className="question-header">Will you be willing to travel?</h3>
                 <h4></h4>
+                <div className="answer-choice first" onClick={this.handleRevealSubmit}>
+                    <h3>Yes</h3>
+                </div>
+
                 <div className="answer-choice" onClick={this.handleRevealSubmit}>
-                    <h3>add_map_icon</h3>
+                    <h3>No</h3>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null
