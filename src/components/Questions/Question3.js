@@ -37,15 +37,15 @@ export default class Question1 extends Component {
                 <h3 className="question-header">How much time can you commit to a program in a week?</h3>
                 <h4>(you can select multiple choices)</h4>
                 <div className="answer-choice first" onClick={this.handleRevealSubmit}>
-                    <h3>1 - 6 hours</h3>
+                    <h5>1 - 6 hours</h5>
                 </div>
 
                 <div className="answer-choice second" onClick={this.handleRevealSubmit}>
-                    <h3>7 - 14 hours</h3>
+                    <h5>7 - 14 hours</h5>
                 </div>
 
                 <div className="answer-choice" onClick={this.handleRevealSubmit}>
-                    <h3>15 - 40 hours</h3>
+                    <h5>15 - 40 hours</h5>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null

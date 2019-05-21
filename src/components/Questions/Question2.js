@@ -37,15 +37,15 @@ export default class Question1 extends Component {
                 <h3 className="question-header">How much are you willing to spend on school?</h3>
                 <h4>(you can select multiple choices)</h4>
                 <div className="answer-choice first" onClick={this.handleRevealSubmit}>
-                    <h3>$10,000+</h3>
+                    <h5>$10,000+</h5>
                 </div>
 
                 <div className="answer-choice second" onClick={this.handleRevealSubmit}>
-                    <h3>$1000 - $10,000</h3>
+                    <h5>$1000 - $10,000</h5>
                 </div>
 
                 <div className="answer-choice" onClick={this.handleRevealSubmit}>
-                    <h3>$0 - $999</h3>
+                    <h5>$0 - $999</h5>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null

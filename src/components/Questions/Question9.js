@@ -37,11 +37,11 @@ export default class Question1 extends Component {
                 <h3 className="question-header">Would you consider a program that started less than five years ago?</h3>
                 <h4></h4>
                 <div className="answer-choice first" onClick={this.handleRevealSubmit}>
-                    <h3>Yes</h3>
+                    <h5>Yes</h5>
                 </div>
 
                 <div className="answer-choice" onClick={this.handleRevealSubmit}>
-                    <h3>No</h3>
+                    <h5>No</h5>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null

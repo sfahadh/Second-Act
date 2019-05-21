@@ -37,15 +37,15 @@ export default class Question1 extends Component {
                 <h3 className="question-header">How much time are you willing to invest overall?</h3>
                 <h4>(you can select multiple choices)</h4>
                 <div className="answer-choice first" onClick={this.handleRevealSubmit}>
-                    <h3>less than a month</h3>
+                    <h5>less than a month</h5>
                 </div>
 
                 <div className="answer-choice second" onClick={this.handleRevealSubmit}>
-                    <h3>less than a year</h3>
+                    <h5>less than a year</h5>
                 </div>
 
                 <div className="answer-choice" onClick={this.handleRevealSubmit}>
-                    <h3>more than a year</h3>
+                    <h5>more than a year</h5>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null
