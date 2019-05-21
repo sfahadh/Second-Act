@@ -9,7 +9,7 @@ import Question4 from './components/Questions/Question4'
 import Question5 from './components/Questions/Question5'
 import Question6 from './components/Questions/Question6'
 import Question7 from './components/Questions/Question7'
-// import Question8 from './components/Questions/Question8'
+import Question8 from './components/Questions/Question8'
 // import Question9 from './components/Questions/Question9'
 
 class App extends Component {
@@ -28,7 +28,7 @@ class App extends Component {
             <Route path="/question-5" component={Question5}></Route>
             <Route path="/question-6" component={Question6}></Route>
             <Route path="/question-7" component={Question7}></Route>
-            {/* <Route path="/question-8" component={Question8}></Route> */}
+            <Route path="/question-8" component={Question8}></Route>
             {/* <Route path="/question-9" component={Question9}></Route> */}
           </Switch>
         </div>
