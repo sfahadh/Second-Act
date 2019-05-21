@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './Questions.css'
 // import { Redirect } from "react-router-dom"
 
 export default class Question1 extends Component {
