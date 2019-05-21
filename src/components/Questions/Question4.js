@@ -34,18 +34,18 @@ export default class Question1 extends Component {
         return (
         <div className="questions-page">
             <form className="question-form">
-                <h3 className="question-header">How much time can you commit to a program in a week?</h3>
+                <h3 className="question-header">How much time are you willing to invest overall?</h3>
                 <h4>(you can select multiple choices)</h4>
                 <div className="answer-choice first" onClick={this.handleRevealSubmit}>
-                    <h3>1 - 6 hours</h3>
+                    <h3>less than a month</h3>
                 </div>
 
                 <div className="answer-choice second" onClick={this.handleRevealSubmit}>
-                    <h3>7 - 14 hours</h3>
+                    <h3>less than a year</h3>
                 </div>
 
                 <div className="answer-choice" onClick={this.handleRevealSubmit}>
-                    <h3>15 - 40 hours</h3>
+                    <h3>more than a year</h3>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null
