@@ -9,7 +9,6 @@ export default class Question1 extends Component {
         this.state = {
             nextQuestion: false,
             revealSubmit: false,
-            pick: true
         }
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleRevealSubmit = this.handleRevealSubmit.bind(this);
@@ -18,41 +17,31 @@ export default class Question1 extends Component {
     handleRevealSubmit() {
         this.setState({
             revealSubmit: true,
-            pick: false
         })
     }
 
     handleSubmit(evt) {
         evt.preventDefault()
         this.setState({
-            nextQuestion: true,
+            nextQuestion: true
         })
     }
 
     render() {
-        const { nextQuestion, revealSubmit, pick } = this.state
-        if(nextQuestion) return <Redirect to="/question-9"/>
+        const { nextQuestion, revealSubmit } = this.state
+        // if(nextQuestion) return <Redirect to="/"/>
 
         return (
         <div className="questions-page">
             <form className="question-form">
-                <h3 className="question-header">What do you hope to gain from this course?</h3>
+                <h3 className="question-header">Would you consider a program that started less than five years ago?</h3>
                 <h4></h4>
-                <div className={ pick ? 'answer-choice second' : 'condition'} 
-                    onClick={this.handleRevealSubmit}>
-                    <h5>A degree</h5>
-                </div>
-
-                <div className="answer-choice second" onClick={this.handleRevealSubmit}>
-                    <h5>A certificate</h5>
-                </div>
-
-                <div className="answer-choice third" onClick={this.handleRevealSubmit}>
-                    <h5>General Knowledge</h5>
+                <div className="answer-choice first" onClick={this.handleRevealSubmit}>
+                    <h3>Yes</h3>
                 </div>
 
                 <div className="answer-choice" onClick={this.handleRevealSubmit}>
-                    <h5>Job Placement</h5>
+                    <h3>No</h3>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null
