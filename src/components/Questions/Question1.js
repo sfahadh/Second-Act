@@ -34,43 +34,22 @@ export default class Question1 extends Component {
         return (
         <div className="questions-page">
             <form className="question-form">
-                <h3>What is your area of interest?</h3>
+                <h3 className="question-header">What is your area of interest?</h3>
                 <h4>(you can select multiple choices)</h4>
-                <div className="answer-choices"> 
-                    <div className="checkbox">
-                        <input type="checkbox" id="checkbox-1" onClick={this.handleRevealSubmit}/>
-                        <label htmlFor="checkbox-1">
-                            <span className="label-field">Business</span>
-                        </label>
-                    </div>
+                <div className="answer-choice first" onClick={this.handleRevealSubmit}>
+                    <h3>Business</h3>
+                </div>
 
-                    <div className="checkbox">
-                        <input type="checkbox" id="checkbox-2" onClick={this.handleRevealSubmit}/>
-                        <label htmlFor="checkbox-2">
-                            <span className="label-field">Design</span>
-                        </label>
-                    </div>
+                <div className="answer-choice second" onClick={this.handleRevealSubmit}>
+                    <h3>Design</h3>
+                </div>
 
-                    <div className="checkbox">
-                        <input type="checkbox" id="checkbox-3" onClick={this.handleRevealSubmit}/>
-                        <label htmlFor="checkbox-3">
-                            <span className="label-field">Culinary Arts</span>
-                        </label>
-                    </div>
+                <div className="answer-choice third" onClick={this.handleRevealSubmit}>
+                    <h3>Technology</h3>
+                </div>
 
-                    <div className="checkbox">
-                        <input type="checkbox" id="checkbox-4" onClick={this.handleRevealSubmit}/>
-                        <label htmlFor="checkbox-4">
-                            <span className="label-field">Technology</span>
-                        </label>
-                    </div>
-
-                    <div className="checkbox">
-                        <input type="checkbox" id="checkbox-5" onClick={this.handleRevealSubmit}/>
-                        <label htmlFor="checkbox-5">
-                            <span className="label-field">Vocational Training</span>
-                        </label>
-                    </div> 
+                <div className="answer-choice" onClick={this.handleRevealSubmit}>
+                    <h3>Vocational Training</h3>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null
