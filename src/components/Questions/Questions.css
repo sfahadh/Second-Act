@@ -1,6 +1,6 @@
 .quiz-page, .questions-page {
     height: 101.4vh;
-    width: 100vw;
+    width: 99.8vw;
     border: 1px solid yellow;
     /* background-image: url(./images/yellow_background.jpg);
     background-size: 100% 100%; */
@@ -11,11 +11,15 @@
     width: 100vw !important;
 }
 
-.question-form h3 {
+.question-form h3, .question-form h5 {
     font-family: Avenir-Book;
     font-weight: 400;
     margin: 62pt 26pt 0 26pt;
     color: white;
+}
+
+.question-form h5 {
+    font-size: 16pt;
 }
 
 .question-header {
@@ -59,13 +63,21 @@
     border: 4px solid white;
 }
 
-.answer-choice h3 {
+.question-form h5 {
     position: relative;
     bottom: 35px;
 }
 
 .first, .second, .third {
     border-bottom: none;
+}
+
+.condition {
+    cursor: pointer;
+    width: 330px;
+    margin: auto;
+    transform: scale(1.03);
+    border: 4px solid yellow;
 }
   
 button {
