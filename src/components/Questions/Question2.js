@@ -25,8 +25,8 @@ export default class Question1 extends Component {
             return {
                 revealSubmit: true,
                 choice1: !prevState.choice1,
-                choice2: false,
-                choice3: false
+                choice2: true,
+                choice3: true
             }
         })
     }
@@ -36,8 +36,8 @@ export default class Question1 extends Component {
             return {
                 revealSubmit: true,
                 choice2: !prevState.choice2,
-                choice1: false,
-                choice3: false
+                choice1: true,
+                choice3: true
                 }
         })
     }
@@ -47,8 +47,8 @@ export default class Question1 extends Component {
             return {
                 revealSubmit: true,
                 choice3: !prevState.choice3,
-                choice2: false,
-                choice1: false
+                choice2: true,
+                choice1: true
             }
         })
     }
@@ -61,7 +61,7 @@ export default class Question1 extends Component {
     }
 
     render() {
-        const { nextQuestion, revealSubmit, choice1, choice2, choice3, } = this.state
+        const { nextQuestion, revealSubmit, choice1, choice2, choice3 } = this.state
         if(nextQuestion) return <Redirect to="/question-3"/>
 
         return (
