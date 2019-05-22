@@ -32,7 +32,7 @@ export default class Question1 extends Component {
         if(nextQuestion) return <Redirect to="/question-4"/>
 
         return (
-        <div className="questions-page">
+        <div className="questions-page" id="q3">
             <form className="question-form">
                 <h3 className="question-header">How much time can you commit to a program in a week?</h3>
                 <h4>(you can select multiple choices)</h4>

@@ -69,7 +69,7 @@ export default class Question1 extends Component {
         if(nextQuestion) return <Redirect to="/question-2"/>
 
         return (
-        <div className="questions-page">
+        <div className="questions-page" id="q1">
             <form className="question-form">
                 <h3 className="question-header">What is your area of interest?</h3>
                 <h4>(you can select multiple choices)</h4>
