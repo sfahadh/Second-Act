@@ -1,0 +1,34 @@
+.more-info {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 35px;
+}
+
+.info-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-logo {
+  display: flex;
+  justify-content: center;
+}
+
+
+.more-info p {
+  font-family: Avenir-Book;
+  font-size: 17px;
+  padding-bottom: 7px;
+}
+
+@media (min-width: 700px) {
+  .more-info {
+    max-width: 780px;
+  }
+  .info-header {
+    flex-direction: row-reverse;  
+    justify-content: space-between;
+    align-items: flex-start;
+  }  
+}
