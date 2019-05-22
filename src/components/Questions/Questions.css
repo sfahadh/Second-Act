@@ -4,7 +4,7 @@
     border: 1px solid yellow;
     /* background-image: url(./images/yellow_background.jpg);
     background-size: 100% 100%; */
-    background-color: black;
+    /* background-color: black; */
 }
 
 .question-form {
@@ -47,10 +47,11 @@
 }
 
 .answer-choice {
-    border: 3px solid white; 
+    border: 3pt solid #ffe5b8; 
     cursor: pointer;
     width: 330px;
     margin: auto;
+    font-size: 15pt;
 }
 
 .answer-choice:hover {
@@ -82,3 +83,9 @@ button {
 button:hover {
     transform: scale(1.1);
 }
+#q1{
+    background-image: url(./images/yellow_background.jpg);
+    background-size: cover;
+}
+#q2{
+  background-image:linear-gradient(#3b65a5,#6f9de2 );}
