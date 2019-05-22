@@ -71,14 +71,6 @@
 .first, .second, .third {
     border-bottom: none;
 }
-
-.condition {
-    cursor: pointer;
-    width: 330px;
-    margin: auto;
-    transform: scale(1.03);
-    border: 4px solid yellow;
-}
   
 button {
     width: 130pt;
@@ -93,4 +85,12 @@ button {
 
 button:hover {
     transform: scale(1.1);
+}
+
+.condition {
+    cursor: pointer;
+    width: 330px;
+    margin: auto;
+    transform: scale(1.03);
+    border: 4px solid red;
 }
