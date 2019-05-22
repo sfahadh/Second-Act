@@ -104,3 +104,35 @@ button:hover {
 #q3{
     background: linear-gradient(#d7523d,#f47764);
 }
+#q4{
+    background-image: url(images/yellow_background.jpg);
+    background-size: cover;
+}
+#q5{
+    background: linear-gradient(#3b65a5,#88abe0);
+}
+.material-icons{
+    font-size:36px;
+    margin-left: 80%;
+
+}
+#mapbox{
+    padding: 10px;
+}
+#q6{
+    background: linear-gradient(#d7523d,#f47764);
+}
+#q7{
+    background-image: url(images/yellow_background.jpg);
+    background-size: cover;
+}
+#q8{
+    background: linear-gradient(#3b65a5,#88abe0);
+}
+#q9{
+    background: linear-gradient(#d7523d,#f47764);
+}
+.results-intro{
+    width: 400px;
+    height: 300px;
+}

@@ -29,10 +29,10 @@ export default class Question1 extends Component {
 
     render() {
         const { nextQuestion, revealSubmit } = this.state
-        // if(nextQuestion) return <Redirect to="/"/>
+        if(nextQuestion) return <Redirect to="/results"/>
 
         return (
-        <div className="questions-page">
+        <div className="questions-page" id="q9">
             <form className="question-form">
                 <h3 className="question-header">Would you consider a program that started less than five years ago?</h3>
                 <h4></h4>

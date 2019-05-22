@@ -11,6 +11,7 @@ import Question6 from './components/Questions/Question6'
 import Question7 from './components/Questions/Question7'
 import Question8 from './components/Questions/Question8'
 import Question9 from './components/Questions/Question9'
+import ResultsPage from './components/ResultsPage/ResultsPage';
 
 class App extends Component {
 
@@ -30,6 +31,7 @@ class App extends Component {
             <Route path="/question-7" component={Question7}></Route>
             <Route path="/question-8" component={Question8}></Route>
             <Route path="/question-9" component={Question9}></Route>
+            <Route path="/results" component={ResultsPage}></Route>
           </Switch>
         </div>
       </div>
