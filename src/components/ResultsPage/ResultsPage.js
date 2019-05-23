@@ -37,6 +37,9 @@ class ResultsPage extends Component {
             <h1 className="schedule">Class Schedules</h1>
             <img  src={require("../../images/june.png")}/>
             <img className="dates1"  src={require("../../images/rhino1.png")}/>
+
+            <img className="dates2"  src={require("../../images/summerResidency.png")}/>
+
             </div>
             </div>
         );
