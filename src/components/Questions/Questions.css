@@ -214,3 +214,9 @@ span{
 .schedule{
     font-family: Avenir-Light;
 }
+.logo{
+    position: absolute;
+    transform: translateX(-410px);
+    width:300px;
+
+}

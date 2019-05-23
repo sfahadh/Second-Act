@@ -10,6 +10,8 @@ class ResultsPage extends Component {
             <div>
             <h1 className="second-act">Second Act</h1>
             <div className="graph-container">
+            <img className="logo" src={require("../../images/schoolLogos.png")} alt="logo" /> 
+
            <img src={require("../../images/courseTiers.png")} alt="graph" /> 
              <p className="results-intro"> Based on your answers, Second Act has chosen SVA's Summer Residency
                      course in illustration and visual storytelling as your top choice.
