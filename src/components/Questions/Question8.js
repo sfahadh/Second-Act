@@ -34,7 +34,7 @@ export default class Question1 extends Component {
         if(nextQuestion) return <Redirect to="/question-9"/>
 
         return (
-        <div className="questions-page">
+        <div className="questions-page" id="q8">
             <form className="question-form">
                 <h3 className="question-header">What do you hope to gain from this course?</h3>
                 <h4></h4>
