@@ -1,45 +1,49 @@
 .header {
     border: 2px solid rgb(160, 199, 118);
-    height: 35pt;
-    background-color: rgb(160, 199, 118);
-    color: white;
+  
+    
 }
 
 .home-page h1 {
     font-family: Avenir-Light;
     height: 27pt;
-    font-size: 20pt;
+    font-size: 40pt;
     margin-top: 5px;
     letter-spacing: 0.72pt;
     font-weight: 400;
+    color: #d7523d;
 }
 
 .first-image {
-    height: 472pt;
-    background-image: url('./carousel.png');
-    background-size: 100%;
+    width: 100vw;
+    height: 800px;
+    margin-top: 5%;
 }
 
 .first-image button {
-    margin-top: 380pt;
+    margin-top: 57%;
     width: 238pt;
     height: 62pt;
     border-radius: 5%;
     font-size: 21pt;
     font-family: Avenir-Light;
     color: white;
-    background-color: rgb(160, 199, 118);
+    background-color:#d7523d;
+    position: absolute;
+    right: 40%;    
 }
 
 .second-image {
     height: 414pt;
-    background-image: url('./image.png');
-    background-size: 100%;
+    /* background-image: url('./image.png'); */
+    /* background-size: 100%; */
+    border: black solid;
 }
 
-.third-image {
+/* .third-image {
     height: 152pt;
-}
+    border: solid black;
+} */
 
 .third-image h2 {
     font-family: Avenir-Light;
@@ -53,4 +57,28 @@
     font-family: Avenir-Book;
     position: relative;
     top: -17px;
+    
+}
+.vicky{
+    width: 500px;
+    margin-top: 1%;
+
+}
+.quote{
+    width: 500px;
+    margin-bottom: 10%;
+    transform: translateX(20px);
+}
+.coffee-guy{
+    margin-top: 10%;
+    width: 80vw;
+}
+.quote2{
+    margin-left: 50%;
+    transform: translateY(-750px)
+}
+.landingMsg{
+    margin-bottom: 30%;
+    transform: translateY(-300px);
+    width: 55vw;
 }
