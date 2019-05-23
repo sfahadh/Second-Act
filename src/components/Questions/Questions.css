@@ -133,6 +133,37 @@ button:hover {
     background: linear-gradient(#d7523d,#f47764);
 }
 .results-intro{
-    width: 400px;
+    width: 620px;
     height: 300px;
+    font-size: 25pt;
+}
+.graph-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.second-act{
+    color: #d7523d;
+}
+.progress-container{
+    display: flex;
+}
+.map{
+    margin-top:5%; 
+}
+.calenderBackground{
+    background-image: url(../../images/calendarBackground.jpeg);
+    width: 100vw;
+    height: 1000px; 
+    border: solid black;
+    position: relative;
+
+}
+.schedule{
+    color: white;
+}
+.dates1{
+    position: absolute;
+    z-index: 4;
+  margin-top: 30%;
+  margin-right: 40%;
 }
