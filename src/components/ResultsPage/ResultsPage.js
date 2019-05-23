@@ -30,6 +30,7 @@ class ResultsPage extends Component {
                     </div>
                 </div>
 
+
                 <div className="calenderBackground">
                     <h1 className="schedule">Class Schedules</h1>
                     <img src={require("../../images/june.png")}/>
