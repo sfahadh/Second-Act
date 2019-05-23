@@ -164,6 +164,15 @@ button:hover {
 .dates1{
     position: absolute;
     z-index: 4;
-  margin-top: 30%;
-  margin-right: 40%;
+  margin-top: 32%;
+  transform: translateX(-700px)
+}
+.dates2{
+    z-index: 4;
+    position: absolute;
+    transform: translateY(550px);
+    transform: translateX(-700px);
+    margin-top: 42%;
+
+
 }
