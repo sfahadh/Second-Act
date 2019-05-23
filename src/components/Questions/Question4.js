@@ -88,5 +88,5 @@ export default class Question1 extends Component {
             </form>
         </div>
         )
-            }
+    }
 }
