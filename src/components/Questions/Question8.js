@@ -9,16 +9,63 @@ export default class Question1 extends Component {
         this.state = {
             nextQuestion: false,
             revealSubmit: false,
-            pick: true
+            choice1: true,
+            choice2: true,
+            choice3: true,
+            choice3: true
         }
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleRevealSubmit = this.handleRevealSubmit.bind(this);
+        this.toggleChoice1 = this.toggleChoice1.bind(this);
+        this.toggleChoice2 = this.toggleChoice2.bind(this);
+        this.toggleChoice3 = this.toggleChoice3.bind(this);
+        this.toggleChoice4 = this.toggleChoice4.bind(this);
     }
 
-    handleRevealSubmit() {
-        this.setState({
-            revealSubmit: true,
-            pick: false
+    toggleChoice1() {
+        this.setState((prevState) => {
+            return {
+                revealSubmit: true,
+                choice1: !prevState.choice1,
+                choice2: true,
+                choice3: true,
+                choice4: true,
+            }
+        })
+    }
+
+    toggleChoice2() {
+        this.setState((prevState) => {
+            return {
+                revealSubmit: true,
+                choice2: !prevState.choice2,
+                choice1: true,
+                choice3: true,
+                choice4: true,
+            }
+        })
+    }
+
+    toggleChoice3() {
+        this.setState((prevState) => {
+            return {
+                revealSubmit: true,
+                choice3: !prevState.choice3,
+                choice2: true,
+                choice1: true,
+                choice4: true,
+            }
+        })
+    }
+
+    toggleChoice4() {
+        this.setState((prevState) => {
+            return {
+                revealSubmit: true,
+                choice4: !prevState.choice4,
+                choice2: true,
+                choice1: true,
+                choice3: true,
+            }
         })
     }
 
@@ -30,7 +77,7 @@ export default class Question1 extends Component {
     }
 
     render() {
-        const { nextQuestion, revealSubmit, pick } = this.state
+        const { nextQuestion, revealSubmit, choice1, choice2, choice3, choice4 } = this.state
         if(nextQuestion) return <Redirect to="/question-9"/>
 
         return (
@@ -38,20 +85,23 @@ export default class Question1 extends Component {
             <form className="question-form">
                 <h3 className="question-header">What do you hope to gain from this course?</h3>
                 <h4></h4>
-                <div className={ pick ? 'answer-choice second' : 'condition'} 
-                    onClick={this.handleRevealSubmit}>
+                <div className={ choice1 ? 'answer-choice first' : 'condition'} 
+                    onClick={this.toggleChoice1}>
                     <h5>A degree</h5>
                 </div>
 
-                <div className="answer-choice second" onClick={this.handleRevealSubmit}>
+                <div className={ choice2 ? 'answer-choice second' : 'condition'} 
+                    onClick={this.toggleChoice2}>
                     <h5>A certificate</h5>
                 </div>
 
-                <div className="answer-choice third" onClick={this.handleRevealSubmit}>
+                <div className={ choice3 ? 'answer-choice third' : 'condition'} 
+                    onClick={this.toggleChoice3}>
                     <h5>General Knowledge</h5>
                 </div>
 
-                <div className="answer-choice" onClick={this.handleRevealSubmit}>
+                <div className={ choice4 ? 'answer-choice' : 'condition'} 
+                    onClick={this.toggleChoice4}>
                     <h5>Job Placement</h5>
                 </div>
                 {

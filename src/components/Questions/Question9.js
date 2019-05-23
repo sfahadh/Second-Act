@@ -9,14 +9,31 @@ export default class Question1 extends Component {
         this.state = {
             nextQuestion: false,
             revealSubmit: false,
+            choice1: true,
+            choice2: true
         }
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleRevealSubmit = this.handleRevealSubmit.bind(this);
+        this.toggleChoice1 = this.toggleChoice1.bind(this);
+        this.toggleChoice2 = this.toggleChoice2.bind(this);
     }
 
-    handleRevealSubmit() {
-        this.setState({
-            revealSubmit: true,
+    toggleChoice1() {
+        this.setState((prevState) => {
+            return {
+                revealSubmit: true,
+                choice1: !prevState.choice1,
+                choice2: true,
+            }
+        })
+    }
+
+    toggleChoice2() {
+        this.setState((prevState) => {
+            return {
+                revealSubmit: true,
+                choice2: !prevState.choice2,
+                choice1: true,
+            }
         })
     }
 
@@ -28,7 +45,7 @@ export default class Question1 extends Component {
     }
 
     render() {
-        const { nextQuestion, revealSubmit } = this.state
+        const { nextQuestion, revealSubmit, choice1, choice2 } = this.state
         if(nextQuestion) return <Redirect to="/results"/>
 
         return (
@@ -36,11 +53,13 @@ export default class Question1 extends Component {
             <form className="question-form">
                 <h3 className="question-header">Would you consider a program that started less than five years ago?</h3>
                 <h4></h4>
-                <div className="answer-choice first" onClick={this.handleRevealSubmit}>
+                <div className={ choice1 ? 'answer-choice first' : 'condition'} 
+                    onClick={this.toggleChoice1}>
                     <h5>Yes</h5>
                 </div>
 
-                <div className="answer-choice" onClick={this.handleRevealSubmit}>
+                <div className={ choice2 ? 'answer-choice' : 'condition'} 
+                    onClick={this.toggleChoice2}>
                     <h5>No</h5>
                 </div>
                 {
