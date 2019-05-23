@@ -187,36 +187,3 @@ button:hover {
     top: -83px;
     font-size: 60px;
 }
-.text-center{
-    position: absolute;
-    margin-top: 4%;
-    margin-left: 50%;
-    color: white;
-    font-weight: bolder;
-}
-span{
-    color: black;
-    font-weight: bolder;
-}
-.bars{
-    margin-top: 7px;
-    position: absolute;
-    transform: translateX(-300px);
-}
-
-.second-act{
-    font-family: Avenir-Light;
-}
-.school-comp{
-    font-family: Avenir-Light;
-}
-
-.schedule{
-    font-family: Avenir-Light;
-}
-.logo{
-    position: absolute;
-    transform: translateX(-410px);
-    width:300px;
-
-}

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import './Questions.css'
 import { Redirect } from "react-router-dom"
-import { Progress } from 'reactstrap';
 
 export default class Question1 extends Component {
     constructor(props) {
@@ -71,8 +70,6 @@ export default class Question1 extends Component {
 
         return (
         <div className="questions-page" id="q1">
-        <div className="text-center">1 of 9</div>
-      <Progress value="1" max="9" />
             <form className="question-form">
                 <h3 className="question-header">What is your area of interest?</h3>
                 <h4>(you can select multiple choices)</h4>
