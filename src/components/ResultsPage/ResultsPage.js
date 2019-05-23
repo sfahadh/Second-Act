@@ -10,29 +10,33 @@ class ResultsPage extends Component {
             <div>
             <h1 className="second-act">Second Act</h1>
             <div className="graph-container">
-                    <img src={require("../../images/courseTiers.png")} alt="graph" /> 
-                 <p className="results-intro"> Based on your answers, Second Act has chosen SVA's Summer Residency
+            <img className="logo" src={require("../../images/schoolLogos.png")} alt="logo" /> 
+
+           <img src={require("../../images/courseTiers.png")} alt="graph" /> 
+             <p className="results-intro"> Based on your answers, Second Act has chosen SVA's Summer Residency
                      course in illustration and visual storytelling as your top choice.
                      The course takes place over <span>two sessions,</span> each costing $3,000,
                      this put's you well <span>within your budget</span> of $15,000.
-                 </p>
-                        
+            </p>
+                </div>
+            
+            <h1 className="school-comp">How The School's Compares</h1>
+        <div className="progress-container">
+            
+         <div className="school-comparison1">
+         <img src={require("../../images/group4.png")}/>
+         <img className="bars" src={require("../../images/bars .png")}/>
+         <img className="map" src={require("../../images/group5.png")}/>
 
-            </div >
-            <h1>How The School's Compares</h1>
-            <div className="progress-container">
-        <div className="school-comparison1">
-        
-<img src={require("../../images/group4.png")}/>
-<img className="map" src={require("../../images/group5.png")}/>
-</div>
+        </div>
 
         <div  className="school-comparison2">
-<img src={require("../../images/group2.png")}/>
-<img  src={require("../../images/group12.png")}/>
+        <img src={require("../../images/group2.png")}/>
+        <img  src={require("../../images/group12.png")}/>
 
-</div>
             </div>
+            </div>
+            
             <div className="calenderBackground">
             <h1 className="schedule">Class Schedules</h1>
             <img  src={require("../../images/june.png")}/>
