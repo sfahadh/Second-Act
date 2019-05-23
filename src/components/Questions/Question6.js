@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './Questions.css'
 import { Redirect } from "react-router-dom"
-import { Progress } from 'reactstrap';
-
 
 export default class Question1 extends Component {
     constructor(props) {
@@ -52,8 +50,6 @@ export default class Question1 extends Component {
 
         return (
         <div className="questions-page" id="q6">
-         <div className="text-center">6 of 9</div>
-      <Progress value="6" max="9" />
             <form className="question-form">
                 <h3 className="question-header">Will you be willing to travel?</h3>
                 <h4></h4>
