@@ -173,6 +173,17 @@ button:hover {
     transform: translateY(550px);
     transform: translateX(-700px);
     margin-top: 42%;
+}
 
+.map-question {
+    height: 110px;
+}
+#map-header {
+    display: inline-block;
+}
 
+.answer-choice i {
+    position: relative;
+    top: -83px;
+    font-size: 60px;
 }

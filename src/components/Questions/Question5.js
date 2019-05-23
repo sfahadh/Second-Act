@@ -36,8 +36,9 @@ export default class Question1 extends Component {
             <form className="question-form">
                 <h3 className="question-header">Where are you located?</h3>
                 <h4></h4>
-                <div className="answer-choice" id="mapbox" onClick={this.handleRevealSubmit}>
-                    <i class="material-icons">add_location</i>
+                <div className="answer-choice map-question" id="mapbox" onClick={this.handleRevealSubmit}>
+                    <h5 id="map-header">New York, NY</h5>
+                    <i className="material-icons">add_location</i>
                 </div>
                 {
                     !!revealSubmit ? <button onClick={this.handleSubmit}>Submit</button> : null

@@ -1,27 +1,24 @@
-.header {
-    border: 2px solid rgb(160, 199, 118);
-  
-    
+.home-page {
+    border: 2px solid white;
 }
 
 .home-page h1 {
     font-family: Avenir-Light;
     height: 27pt;
     font-size: 40pt;
-    margin-top: 5px;
+    margin-top: 10px;
     letter-spacing: 0.72pt;
     font-weight: 400;
     color: #d7523d;
 }
 
 .first-image {
-    width: 100vw;
-    height: 800px;
-    margin-top: 5%;
+    height: 80%;
+    margin: 5%;
 }
 
 .first-image button {
-    margin-top: 57%;
+    margin: 40px auto 0 auto;
     width: 238pt;
     height: 62pt;
     border-radius: 5%;
@@ -29,56 +26,93 @@
     font-family: Avenir-Light;
     color: white;
     background-color:#d7523d;
-    position: absolute;
-    right: 40%;    
+    right: 40%;   
 }
 
-.second-image {
-    height: 414pt;
-    /* background-image: url('./image.png'); */
-    /* background-size: 100%; */
-    border: black solid;
-}
-
-/* .third-image {
-    height: 152pt;
-    border: solid black;
-} */
-
-.third-image h2 {
-    font-family: Avenir-Light;
-    font-weight: 600;
-    margin-top: 52pt;
-}
-
-.third-image p {
-    font-size: 11pt;
-    margin: 0 30pt;
-    font-family: Avenir-Book;
-    position: relative;
-    top: -17px;
-    
-}
-.vicky{
-    width: 500px;
+.vicky {
+    width: 40%;
     margin-top: 1%;
-
 }
-.quote{
-    width: 500px;
+
+.quote { 
+    width: 40%;
     margin-bottom: 10%;
     transform: translateX(20px);
 }
-.coffee-guy{
-    margin-top: 10%;
-    width: 80vw;
+
+.quote2 {
+    width: 90%;
 }
-.quote2{
-    margin-left: 50%;
-    transform: translateY(-750px)
+
+.home-last-quote {
+    width: 60%;
+    margin: 1% auto 4% auto;
 }
-.landingMsg{
-    margin-bottom: 30%;
-    transform: translateY(-300px);
-    width: 55vw;
+
+.home-last-quote p {
+    font-family: Avenir-Medium;
+    font-size: 1.7vw;
+}
+
+.home-last-quote h2 {
+    display: none
+}
+
+@media screen and (max-width: 625px) {
+    .first-image {
+        margin: 0;
+    }
+
+    .vicky {
+        width: 100%;
+        margin: 0;
+    }
+
+    .quote { 
+        display: none;
+    }
+
+    .home-page h1 {
+        font-size: 30pt;
+        font-weight: 700;
+    }
+
+    .first-image button {
+        display: absolute;
+        width: 238pt;
+        height: 62pt; 
+        margin-bottom: 12%;
+    }
+
+    .quote2 {
+        display: none;
+    }
+
+    .third-image {
+        margin: auto;
+        height: 100vh;
+        background-image: url("../../images/quote2mobile.png");
+        background-size: 100% 100%;
+    }
+
+    .home-last-quote {
+        width: 76%;
+    }
+
+    .home-last-quote p {
+        font-family: Avenir-Book;
+        font-size: 16pt;
+    
+    }
+    
+    .home-last-quote h2 {
+        display: block;
+        font-family: Avenir-Book;
+        font-size: 20pt;
+        font-weight: 600;
+    }
+
+    .home-page h1 {
+        font-size: 30pt;
+    }
 }

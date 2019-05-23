@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
 import './MoreInfo.css'
-import sva from './images/sva.png'
+import parson from './images/parsons.png'
 
 export default function SvaInfo() {
   return (
     <div className="more-info">
       <div className="info-header">
         <div className="info-logo">
-          <img src={sva} alt="Logo" width="228px" height="141px"/>
+          <img src={parson} alt="Logo" width="228px" height="141px"/>
         </div>
         <div>
 					<p>

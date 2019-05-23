@@ -12,6 +12,9 @@ import Question7 from './components/Questions/Question7'
 import Question8 from './components/Questions/Question8'
 import Question9 from './components/Questions/Question9'
 import ResultsPage from './components/ResultsPage/ResultsPage';
+import Parson from './components/MoreInfo/ParsonsInfo'
+import Pratt from './components/MoreInfo/PrattInfo'
+import Sva from './components/MoreInfo/SvaInfo'
 
 class App extends Component {
 
@@ -32,6 +35,9 @@ class App extends Component {
             <Route path="/question-8" component={Question8}></Route>
             <Route path="/question-9" component={Question9}></Route>
             <Route path="/results" component={ResultsPage}></Route>
+            <Route path="/parson" component={Parson}></Route>
+            <Route path="/pratt" component={Pratt}></Route>
+            <Route path="/sva" component={Sva}></Route>
           </Switch>
         </div>
       </div>
