@@ -18,7 +18,7 @@ class ResultsPage extends Component {
             </p>
                 </div>
             
-            <h1>How The School's Compares</h1>
+            <h1 className="school-comp">How The School's Compares</h1>
         <div className="progress-container">
             
          <div className="school-comparison1">
